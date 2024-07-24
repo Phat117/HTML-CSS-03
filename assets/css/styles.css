@@ -1,0 +1,368 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Poppins", sans-serif;
+}
+
+:root {
+    --main-color: #fff;
+}
+/*==============  Common  =============*/
+
+.main-content {
+    width: 1170px;
+    margin: 0 auto;
+    max-width: calc(100% - 48px);
+}
+
+.heading {
+    color: #0d1111;
+    font-size: 4.2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 133.333%;
+}
+/*==============  Header  =============*/
+
+.header {
+    padding: 52px 0 8px;
+    background-color: var(--main-color);
+}
+
+.header .body {
+    display: flex;
+    align-items: center;
+}
+
+.header.fixed {
+    position: sticky;
+    top: -28px;
+    z-index: 2;
+}
+
+.header .body .list {
+    display: flex;
+    gap: 39px;
+    margin-left: 235px;
+}
+
+.header .body .item a {
+    text-decoration: none;
+    color: #2f3a3b;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.header .body .item a:hover {
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+.header .cta {
+    margin-left: auto;
+}
+
+.header .cta a {
+    text-decoration: none;
+    color: #494949;
+    text-align: center;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.header .cta a.up {
+    margin-left: 24px;
+    line-height: 48px;
+    border-radius: 6px;
+    border: 1px solid #1ebfc1;
+    padding: 12px 24px;
+    color: #1ebfc1;
+    font-weight: 600;
+}
+
+.header .cta a:hover {
+    text-decoration: underline;
+}
+
+/*==============  Hero  =============*/
+
+.hero-wrap {
+    padding-bottom: 79px;
+    margin-top: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.hero .hero-content {
+    width: 40%;
+}
+
+.hero-content .heading::before {
+    content: "😎 EASY LEAENING PLATFORM";
+    margin-bottom: 18px;
+    display: block;
+    color: #767e7e;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.hero-content .heading {
+    font-size: 6.2rem;
+    font-weight: 700;
+    line-height: 116.129%;
+}
+
+.hero-content .desc {
+    margin-top: 46px;
+    color: #9da6a5;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 177.778%;
+}
+
+.hero-content .cta {
+    margin-top: 52px;
+    display: flex;
+    align-items: center;
+}
+
+.hero-content .cta a {
+    display: inline-block;
+}
+.hero-content .cta .btn {
+    text-decoration: none;
+    padding: 20px 41px;
+    border-radius: 14px;
+    background: #1ebfc1;
+    box-shadow: 0px 10px 50px 0px;
+    color: #fff;
+    text-align: center;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.hero-content .cta .play {
+    margin-left: 50px;
+    width: 62px;
+    height: 62px;
+    flex-shrink: 0;
+    border-radius: 62px;
+    background: #fff;
+    box-shadow: 0px 22px 50px 0px rgba(0, 0, 0, 0.05);
+    border: none;
+    cursor: pointer;
+}
+
+.hero .hero-image {
+    position: relative;
+    width: 60%;
+    height: 631px;
+}
+
+.hero .hero-image .img {
+    position: absolute;
+    flex-shrink: 0;
+    left: 125px;
+}
+
+.hero .hero-image .img .thumb {
+    width: 576px;
+    height: 631px;
+    flex-shrink: 0;
+    object-fit: cover;
+}
+
+.hero-image .info.no1 {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.hero-image .info.no1 {
+    width: 157px;
+    height: 75px;
+    flex-shrink: 0;
+    border-radius: 18px;
+    background: #fefefd;
+    box-shadow: 0px 10px 80px 0px rgba(0, 0, 0, 0.05);
+    top: 149px;
+    left: -40px;
+}
+
+.hero-image .info.no1 .desc {
+    width: 55px;
+    color: #0d1111;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.hero-image .info.no2 {
+    position: absolute;
+    width: 124px;
+    height: 132px;
+    flex-shrink: 0;
+    border-radius: 24px;
+    background: #fff;
+    box-shadow: 0px 10px 80px 0px rgba(0, 0, 0, 0.05);
+    z-index: 1;
+    bottom: 46px;
+    left: -65px;
+}
+
+.hero-image .info.no2 .head {
+    display: block;
+    text-align: center;
+    padding: 16px 35px 0;
+    color: #0d1111;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.hero-image .info.no2 img {
+    display: block;
+    padding: 0 25px;
+}
+
+.hero-image .info.no2 img.bar1 {
+    margin-top: 16px;
+}
+
+.hero-image .info.no2 img.bar2 {
+    margin-top: 12px;
+}
+.hero-image .info.no2 img.bar3 {
+    margin-top: 10px;
+}
+
+.hero-image .info.no2 img.bar4 {
+    margin-top: 16px;
+    position: relative;
+    left: 20%;
+}
+
+.hero-image .info.no3 {
+    position: absolute;
+    width: 207px;
+    height: 90px;
+    flex-shrink: 0;
+    border-radius: 24px;
+    background: #fefefd;
+    box-shadow: 0px 12px 80px 0px rgba(0, 0, 0, 0.05);
+    z-index: 1;
+    bottom: 41px;
+    right: 45px;
+}
+
+.hero-image .info.no3 img {
+    width: 33px;
+    height: 33px;
+    flex-shrink: 0;
+    object-fit: cover;
+    border-radius: 33px;
+}
+
+.hero-image .info.no3 .head {
+    display: block;
+    padding: 17px 0 0 35px;
+    color: #0d1111;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.hero-image .info.no3 img {
+    display: inline-block;
+    margin-top: 8px;
+    margin-left: -10px;
+}
+
+.hero-image .info.no3 img:first-of-type {
+    margin-left: 35px;
+}
+
+/*==============  Features  =============*/
+.main-content.features {
+    width: 1024px;
+}
+.features {
+    margin-top: 130px;
+}
+
+.features .features-content {
+    width: 591px;
+}
+.features-content .title {
+    margin-top: 18px;
+    color: #0d1111;
+    font-size: 4.2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 133.333%;
+}
+
+.features-content .desc {
+    margin-top: 18px;
+    color: #767e7e;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.features .features-list {
+    margin-top: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.features-list .live {
+    width: 16.5%;
+}
+
+.features-list .task {
+    width: 22%;
+}
+
+.features-list .discuss {
+    width: 22%;
+}
+.features-list .sub-title {
+    margin-top: 26px;
+    color: #0d1111;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.features-list .desc {
+    color: #9da6a5;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 168.75%;
+}
